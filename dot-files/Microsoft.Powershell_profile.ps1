@@ -78,12 +78,25 @@ Clear-Host
 # I just type 'ctrl+`' and then one time type 'start-workspaces' to open all of my workspaces
 Function Start-Workspaces
 {
-    code c:\scripts\notes.code-workspace
-    code c:\scripts\powershell-work.code-workspace
-    code c:\scripts\puppet.code-workspace
-    code c:\scripts\scripts.code-workspace
-    code c:\scripts\website.code-workspace
+   [Cmdletbinding()]
+   Param
+   (
+      [Parameter(Position = 0, Mandatory = $False)]
+      [Switch]$PSOnly
+   )
+   If ($PSOnly)
+   {
+      code "c:\scripts\ps.code-workspace"
+   }
+   Else
+   {
+      code "c:\scripts\md-website.code-workspace"
+      code "c:\scripts\ps.code-workspace"
+      code "c:\scripts\py.code-workspace"
+      code "c:\scripts\tf.code-workspace"
+   }
 }
+New-Alias -Name "sw" -Value Start-Workspaces
 
 Function Bitcoin
 {
