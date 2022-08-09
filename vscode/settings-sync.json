@@ -12,6 +12,10 @@
       ],
       "editor.defaultFormatter": "ms-python.python"
    },
+   "[terraform]": {
+      "editor.defaultFormatter": "hashicorp.terraform",
+      "editor.formatOnSave": true
+   },
    "breadcrumbs.enabled": false,
    "cSpell.enabledLanguageIds": [
       "asciidoc",
@@ -21,8 +25,6 @@
       "plaintext",
       "text"
    ],
-   "azureFunctions.projectSubpath": "dev",
-   "azureFunctions.showProjectWarning": false,
    "diffEditor.ignoreTrimWhitespace": false,
    "editor.acceptSuggestionOnEnter": "off",
    "editor.autoClosingBrackets": "never",
@@ -32,10 +34,6 @@
    "editor.foldingStrategy": "indentation",
    "editor.renderControlCharacters": false,
    "editor.tabSize": 3,
-   "[terraform]": {
-      "editor.defaultFormatter": "hashicorp.terraform",
-      "editor.formatOnSave": true
-   },
    "editor.tokenColorCustomizations": {
       "comments": "#9E9E9E",
       "textMateRules": [
@@ -136,15 +134,23 @@
    "git.path": "C:\\Program Files\\Git\\bin\\git.exe",
    "insertDateString.format": "YYYY-MM-DDThh:mm:ssZZZ",
    "insertDateString.formatDate": "YYYY-MM-DD",
+   "markdown.extension.orderedList.autoRenumber": false,
    "powershell.codeFormatting.autoCorrectAliases": true,
    "powershell.codeFormatting.preset": "Allman",
    "python.analysis.logLevel": "Warning",
+   "python.defaultInterpreterPath": "C:\\Program Files\\Python39\\python.exe",
    "python.formatting.provider": "black",
-   "python.linting.pylintEnabled": true,
    "python.linting.enabled": true,
-   "python.pythonPath": "C:\\Program Files\\Python39\\python.exe",
+   "python.linting.pylintEnabled": true,
+   "redhat.telemetry.enabled": false,
+   "terminal.integrated.profiles.windows": {
+      "ps": {
+         "source": "PowerShell",
+         "args": []
+      }
+   },
+   "terminal.integrated.defaultProfile.windows": "ps",
    "terminal.integrated.cursorStyle": "underline",
-   "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
    "typescript.tsserver.watchOptions": {
       "watchDirectory": "dynamicPriorityPolling",
       "watchFile": "dynamicPriorityPolling"
@@ -154,20 +160,16 @@
    "window.newWindowDimensions": "maximized",
    "window.restoreWindows": "none",
    "window.title": "${rootName}",
-   "workbench.iconTheme": "vscode-icons",
-   "workbench.sideBar.location": "left",
-   "workbench.startupEditor": "newUntitledFile",
-   "workbench.tree.renderIndentGuides": "always",
-   "workbench.colorTheme": "Relax Dark",
    "workbench.colorCustomizations": {
       "editorCursor.foreground": "#228B22",
       "terminalCursor.foreground": "#228B22"
    },
-   "workbench.editorAssociations": [
-      {
-         "viewType": "jupyter-notebook",
-         "filenamePattern": "*.ipynb"
-      }
-   ],
-   "redhat.telemetry.enabled": false
+   "workbench.colorTheme": "Relax Dark",
+   "workbench.editorAssociations": {
+      "*.ipynb": "jupyter-notebook"
+   },
+   "workbench.iconTheme": "vscode-icons",
+   "workbench.sideBar.location": "left",
+   "workbench.startupEditor": "newUntitledFile",
+   "workbench.tree.renderIndentGuides": "always"
 }
