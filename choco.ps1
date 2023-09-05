@@ -22,3 +22,18 @@ foreach ($package in $packages)
 {
    choco install $package -y --limitoutput
 }
+
+
+# Choco commands that might be useful:
+
+# # see installed packages
+# choco list --localonly
+
+# # see packages with upgrades avail
+# choco outdated
+
+# # update all (not recommended)
+# choco upgrade all --noop / cup all -y
+
+# # update selected packages
+# choco upgrade notepadplusplus googlechrome atom 7zip

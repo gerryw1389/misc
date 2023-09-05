@@ -1,311 +1,322 @@
 {
-   "[markdown]": {
-      "editor.tabSize": 3,
-      "files.trimTrailingWhitespace": false
-   },
-   "breadcrumbs.enabled": true,
-   "diffEditor.ignoreTrimWhitespace": false,
-   "editor.acceptSuggestionOnEnter": "off",
-   "editor.autoClosingBrackets": "never",
-   "editor.codeLens": false,
-   "editor.cursorStyle": "line",
-   "editor.detectIndentation": false,
-   "editor.foldingStrategy": "indentation",
-   "editor.renderControlCharacters": false,
-   "editor.tabSize": 3,
-   "editor.tokenColorCustomizations": {
-      "[Relax Dark]": {
-         "comments": "#9E9E9E",
-         "textMateRules": [
-            {
-               "name": "ps-vars",
-               "scope": [
-                  "variable.other.readwrite.powershell",
-                  "variable.language.powershell"
-               ],
-               "settings": {
-                  "foreground": "#228B22"
-               }
-            },
-            {
-               "name": "ps-cmdlets",
-               "scope": [
-                  "support.function.powershell"
-               ],
-               "settings": {
-                  "foreground": "#2BBAC5"
-               }
-            },
-            {
-               "name": "ps-object-properties",
-               "scope": [
-                  "variable.other"
-               ],
-               "settings": {
-                  "foreground": "#00AA55"
-               }
-            },
-            {
-               "name": "ps-double-quotes",
-               "scope": [
-                  "string.quoted.double.powershell",
-                  "string.quoted.single.powershell",
-                  "punctuation.section.group.begin.powershell",
-                  "punctuation.section.group.end.powershell"
-               ],
-               "settings": {
-                  "foreground": "#9ED048"
-               }
-            },
-            {
-               "name": "ps-keywords-if-else-foreach",
-               "scope": [
-                  "keyword.control.powershell",
-                  "punctuation.definition.subexpression.powershell",
-                  "punctuation.definition.substatement.powershell",
-                  "punctuation.section.embedded",
-                  "support.constant.variable.powershell",
-                  "keyword.other.array.begin.powershell",
-                  "keyword.other.hashtable.begin.powershell",
-                  "support.variable.automatic.powershell",
-                  "storage.type.powershell"
-               ],
-               "settings": {
-                  "fontStyle": "italic",
-                  "foreground": "#FF4E4F"
-               }
-            },
-            {
-               "name": "ps-comments",
-               "scope": [
-                  "comment.line.powershell"
-               ],
-               "settings": {
-                  "fontStyle": "italic",
-                  "foreground": "#9E9E9E"
-               }
-            },
-            {
-               "name": "ps-catch-all",
-               "scope": [
-                  "source.powershell"
-               ],
-               "settings": {
-                  "foreground": "#9E9E9E"
-               }
-            },
-            {
-               "name": "sh-function",
-               "scope": [
-                  "support.function.builtin.shell"
-               ],
-               "settings": {
-                  "foreground": "#2BBAC5"
-               }
-            },
-            {
-               "name": "shell-catch-all",
-               "scope": [
-                  "source.shell"
-               ],
-               "settings": {
-                  "foreground": "#9E9E9E"
-               }
-            },
-            {
-               "name": "py-comment",
-               "scope": [
-                  "comment.line.number-sign.python",
-                  "punctuation.definition.comment.python"
-               ],
-               "settings": {
-                  "foreground": "#228B22"
-               }
-            },
-            {
-               "name": "py-args",
-               "scope": [
-                  "meta.item-access.arguments.python"
-               ],
-               "settings": {
-                  "foreground": "#2BBAC5"
-               }
-            },
-            {
-               "name": "py-catch-all",
-               "scope": [
-                  "source.python"
-               ],
-               "settings": {
-                  "foreground": "#9E9E9E"
-               }
-            },
-            {
-               "name": "json-keys",
-               "scope": [
-                  "support.type.property-name.json",
-                  "punctuation.support.type.property-name.begin.json",
-                  "punctuation.support.type.property-name.end.json"
-               ],
-               "settings": {
-                  "foreground": "#228B22"
-               }
-            },
-            {
-               "name": "json-values",
-               "scope": [
-                  "constant.language.json",
-                  "meta.structure.dictionary.value.json",
-                  "string.quoted.double.json"
-               ],
-               "settings": {
-                  "foreground": "#9ED048"
-               }
-            },
-            {
-               "name": "json-catch-all",
-               "scope": [
-                  "punctuation.separator.dictionary.pair.json",
-                  "source.json.comments",
-                  "source.json"
-               ],
-               "settings": {
-                  "foreground": "#9E9E9E"
-               }
-            },
-            {
-               "name": "md-paragraph",
-               "scope": [
-                  "meta.paragraph.markdown"
-               ],
-               "settings": {
-                  "foreground": "#9E9E9E"
-               }
-            },
-            {
-               "name": "md-code-fence",
-               "scope": [
-                  "entity.name.tag.html",
-                  "markup.inline.raw",
-                  "markup.inline.raw.string.markdown",
-                  "string.other.link.title.markdown",
-                  "markup.underline.link.markdown"
-               ],
-               "settings": {
-                  "foreground": "#9ED048"
-               }
-            },
-            {
-               "name": "md-default-green",
-               "scope": [
-                  "entity.name.section.markdown",
-                  "entity.name.tag",
-                  "heading.1.markdown",
-                  "heading.2.markdown",
-                  "heading.3.markdown",
-                  "markup.bold",
-                  "markup.heading.markdown",
-                  "markup.italic",
-                  "markup.list",
-                  "markup.list.numbered.markdown",
-                  "markup.list.unnumbered.markdown",
-                  "markup.fenced_code.block.markdown",
-                  "markup.underline",
-                  "meta.link.inline.markdown",
-                  "meta.link.reference.def.markdown",
-                  "meta.separator.markdown",
-                  "punctuation.definition.heading.markdown",
-                  "punctuation.definition.list.begin.markdown",
-                  "punctuation.definition.metadata.markdown",
-                  "punctuation.definition.link.title.end.markdown",
-                  "punctuation.definition.link.title.begin.markdown"
-               ],
-               "settings": {
-                  "foreground": "#228B22"
-               }
-            },
-            {
-               "name": "md-special",
-               "scope": [
-                  "markup.raw.block.markdown",
-                  "constant.character.escape.markdown",
-                  "markup.inserted.math.inline.markdown"
-               ],
-               "settings": {
-                  "foreground": "#FF4E4F"
-               }
-            }
-         ]
-      }
-   },
-   "editor.wordWrap": "on",
-   "explorer.autoReveal": false,
-   "explorer.compactFolders": false,
-   "explorer.confirmDelete": false,
-   "explorer.confirmDragAndDrop": false,
-   "extensions.ignoreRecommendations": true,
-   "files.autoSave": "afterDelay",
-   "files.autoSaveDelay": 2000,
-   "files.eol": "\n",
-   "files.hotExit": "off",
-   "git.autofetch": true,
-   "git.confirmSync": false,
-   "git.decorations.enabled": true,
-   "git.enableSmartCommit": true,
-   "git.fetchOnPull": true,
-   "git.path": "C:\\Program Files\\Git\\bin\\git.exe",
-   "powershell.codeFormatting.autoCorrectAliases": true,
-   "powershell.codeFormatting.preset": "Allman",
-   "powershell.powerShellDefaultVersion": "Windows PowerShell",
-   "redhat.telemetry.enabled": true,
-   "terminal.integrated.cursorStyle": "underline",
-   "terminal.integrated.defaultProfile.windows": "PowerShell",
-   "terminal.integrated.enableMultiLinePasteWarning": false,
-   "terminal.integrated.enablePersistentSessions": false,
-   "terminal.integrated.profiles.windows": {
-      "Git Bash": {
-         "path": "C:\\Program Files\\Git\\bin\\bash.exe",
-         "source": "Git Bash"
-      },
-      "PowerShell": {
-         "args": [
-            "-NoLogo"
-         ],
-         "icon": "terminal-powershell",
-         "source": "PowerShell"
-      },
-      "WSL": {
-         "path": [
-            "C:\\WINDOWS\\System32\\wsl.exe"
-         ],
-         "args": [],
-         "icon": "terminal-ubuntu"
-      }
-   },
-   "typescript.tsserver.watchOptions": {
-      "watchDirectory": "dynamicPriorityPolling",
-      "watchFile": "dynamicPriorityPolling"
-   },
-   "update.mode": "manual",
-   "vsicons.dontShowNewVersionMessage": true,
-   "window.newWindowDimensions": "maximized",
-   "window.restoreWindows": "none",
-   "window.title": "${rootName}",
-   "workbench.colorCustomizations": {
-      "editorCursor.foreground": "#228B22",
-      "terminalCursor.foreground": "#228B22",
-      "editorBracketHighlight.foreground1": "#9E9E9E",
-      "editorBracketHighlight.foreground2": "#9E9E9E",
-      "editorBracketHighlight.foreground3": "#9E9E9E",
-      "editorBracketHighlight.foreground4": "#9E9E9E",
-      "editorBracketHighlight.foreground5": "#9E9E9E",
-      "editorBracketHighlight.foreground6": "#9E9E9E"
-   },
-   "workbench.colorTheme": "Relax Dark",
-   "workbench.iconTheme": "vscode-icons",
-   "workbench.sideBar.location": "left",
-   "workbench.startupEditor": "newUntitledFile",
-   "workbench.tree.renderIndentGuides": "always",
-   "markdown-pdf.executablePath": "C:\\Program Files\\Chromium\\Application\\chrome.exe",
-   "git.ignoreLegacyWarning": true
+	"[markdown]": {
+		"editor.tabSize": 3,
+		"files.trimTrailingWhitespace": false
+	},
+	"breadcrumbs.enabled": true,
+	"diffEditor.ignoreTrimWhitespace": false,
+	"editor.acceptSuggestionOnEnter": "off",
+	"editor.autoClosingBrackets": "never",
+	"editor.autoClosingDelete": "never",
+	"editor.autoClosingOvertype": "never",
+	"editor.autoClosingQuotes": "never",
+	"editor.codeLens": false,
+	"editor.cursorStyle": "line",
+	"editor.detectIndentation": false,
+	"editor.foldingStrategy": "indentation",
+	"editor.renderControlCharacters": false,
+	"editor.tabSize": 3,
+	"editor.tokenColorCustomizations": {
+		"[Relax Dark]": {
+			"comments": "#9E9E9E",
+			"textMateRules": [
+				{
+					"name": "ps-vars",
+					"scope": [
+						"variable.other.readwrite.powershell",
+						"variable.language.powershell"
+					],
+					"settings": {
+						"foreground": "#228B22"
+					}
+				},
+				{
+					"name": "ps-cmdlets",
+					"scope": [
+						"support.function.powershell"
+					],
+					"settings": {
+						"foreground": "#2BBAC5"
+					}
+				},
+				{
+					"name": "ps-object-properties",
+					"scope": [
+						"variable.other"
+					],
+					"settings": {
+						"foreground": "#00AA55"
+					}
+				},
+				{
+					"name": "ps-double-quotes",
+					"scope": [
+						"string.quoted.double.powershell",
+						"string.quoted.single.powershell",
+						"punctuation.section.group.begin.powershell",
+						"punctuation.section.group.end.powershell"
+					],
+					"settings": {
+						"foreground": "#9ED048"
+					}
+				},
+				{
+					"name": "ps-keywords-if-else-foreach",
+					"scope": [
+						"keyword.control.powershell",
+						"punctuation.definition.subexpression.powershell",
+						"punctuation.definition.substatement.powershell",
+						"punctuation.section.embedded",
+						"support.constant.variable.powershell",
+						"keyword.other.array.begin.powershell",
+						"keyword.other.hashtable.begin.powershell",
+						"support.variable.automatic.powershell",
+						"storage.type.powershell"
+					],
+					"settings": {
+						"fontStyle": "italic",
+						"foreground": "#FF4E4F"
+					}
+				},
+				{
+					"name": "ps-comments",
+					"scope": [
+						"comment.line.powershell"
+					],
+					"settings": {
+						"fontStyle": "italic",
+						"foreground": "#9E9E9E"
+					}
+				},
+				{
+					"name": "ps-catch-all",
+					"scope": [
+						"source.powershell"
+					],
+					"settings": {
+						"foreground": "#9E9E9E"
+					}
+				},
+				{
+					"name": "sh-function",
+					"scope": [
+						"support.function.builtin.shell"
+					],
+					"settings": {
+						"foreground": "#2BBAC5"
+					}
+				},
+				{
+					"name": "shell-catch-all",
+					"scope": [
+						"source.shell"
+					],
+					"settings": {
+						"foreground": "#9E9E9E"
+					}
+				},
+				{
+					"name": "py-comment",
+					"scope": [
+						"comment.line.number-sign.python",
+						"punctuation.definition.comment.python"
+					],
+					"settings": {
+						"foreground": "#228B22"
+					}
+				},
+				{
+					"name": "py-args",
+					"scope": [
+						"meta.item-access.arguments.python"
+					],
+					"settings": {
+						"foreground": "#2BBAC5"
+					}
+				},
+				{
+					"name": "py-catch-all",
+					"scope": [
+						"source.python"
+					],
+					"settings": {
+						"foreground": "#9E9E9E"
+					}
+				},
+				{
+					"name": "json-keys",
+					"scope": [
+						"support.type.property-name.json",
+						"punctuation.support.type.property-name.begin.json",
+						"punctuation.support.type.property-name.end.json"
+					],
+					"settings": {
+						"foreground": "#228B22"
+					}
+				},
+				{
+					"name": "json-values",
+					"scope": [
+						"constant.language.json",
+						"meta.structure.dictionary.value.json",
+						"string.quoted.double.json"
+					],
+					"settings": {
+						"foreground": "#9ED048"
+					}
+				},
+				{
+					"name": "json-catch-all",
+					"scope": [
+						"punctuation.separator.dictionary.pair.json",
+						"source.json.comments",
+						"source.json"
+					],
+					"settings": {
+						"foreground": "#9E9E9E"
+					}
+				},
+				{
+					"name": "md-paragraph",
+					"scope": [
+						"meta.paragraph.markdown"
+					],
+					"settings": {
+						"foreground": "#9E9E9E"
+					}
+				},
+				{
+					"name": "md-code-fence",
+					"scope": [
+						"entity.name.tag.html",
+						"markup.inline.raw",
+						"markup.inline.raw.string.markdown",
+						"string.other.link.title.markdown",
+						"markup.underline.link.markdown"
+					],
+					"settings": {
+						"foreground": "#9ED048"
+					}
+				},
+				{
+					"name": "md-default-green",
+					"scope": [
+						"entity.name.section.markdown",
+						"entity.name.tag",
+						"heading.1.markdown",
+						"heading.2.markdown",
+						"heading.3.markdown",
+						"markup.bold",
+						"markup.heading.markdown",
+						"markup.italic",
+						"markup.list",
+						"markup.list.numbered.markdown",
+						"markup.list.unnumbered.markdown",
+						"markup.fenced_code.block.markdown",
+						"markup.underline",
+						"meta.link.inline.markdown",
+						"meta.link.reference.def.markdown",
+						"meta.separator.markdown",
+						"punctuation.definition.heading.markdown",
+						"punctuation.definition.list.begin.markdown",
+						"punctuation.definition.metadata.markdown",
+						"punctuation.definition.link.title.end.markdown",
+						"punctuation.definition.link.title.begin.markdown"
+					],
+					"settings": {
+						"foreground": "#228B22"
+					}
+				},
+				{
+					"name": "md-special",
+					"scope": [
+						"markup.raw.block.markdown",
+						"constant.character.escape.markdown",
+						"markup.inserted.math.inline.markdown"
+					],
+					"settings": {
+						"foreground": "#FF4E4F"
+					}
+				}
+			]
+		}
+	},
+	"editor.wordWrap": "on",
+	"explorer.autoReveal": false,
+	"explorer.compactFolders": false,
+	"explorer.confirmDelete": false,
+	"explorer.confirmDragAndDrop": false,
+	"extensions.ignoreRecommendations": true,
+	"files.autoSave": "afterDelay",
+	"files.autoSaveDelay": 2000,
+	"files.eol": "\n",
+	"files.hotExit": "off",
+	"git.autofetch": true,
+	"git.confirmSync": false,
+	"git.decorations.enabled": true,
+	"git.enableSmartCommit": true,
+	"git.fetchOnPull": true,
+	"git.ignoreLegacyWarning": true,
+	"git.path": "C:\\Program Files\\Git\\bin\\git.exe",
+	"html.autoClosingTags": false,
+	"html.autoCreateQuotes": false,
+	"html.format.enable": false,
+	"html.format.extraLiners": "",
+	"html.suggest.html5": false,
+	"html.validate.scripts": false,
+	"javascript.autoClosingTags": false,
+	"markdown-pdf.executablePath": "C:\\Program Files\\Chromium\\Application\\chrome.exe",
+	"powershell.codeFormatting.autoCorrectAliases": true,
+	"powershell.codeFormatting.preset": "Allman",
+	"powershell.powerShellDefaultVersion": "Windows PowerShell (x64)",
+	"redhat.telemetry.enabled": true,
+	"terminal.integrated.cursorStyle": "underline",
+	"terminal.integrated.defaultProfile.windows": "PowerShell",
+	"terminal.integrated.enableMultiLinePasteWarning": false,
+	"terminal.integrated.enablePersistentSessions": false,
+	"terminal.integrated.profiles.windows": {
+		"Git Bash": {
+			"path": "C:\\Program Files\\Git\\bin\\bash.exe",
+			"source": "Git Bash"
+		},
+		"PowerShell": {
+			"args": [
+				"-NoLogo"
+			],
+			"icon": "terminal-powershell",
+			"source": "PowerShell"
+		},
+		"WSL": {
+			"path": [
+				"C:\\WINDOWS\\System32\\wsl.exe"
+			],
+			"args": [],
+			"icon": "terminal-ubuntu"
+		}
+	},
+	"typescript.autoClosingTags": false,
+	"typescript.tsserver.watchOptions": {
+		"watchDirectory": "dynamicPriorityPolling",
+		"watchFile": "dynamicPriorityPolling"
+	},
+	"update.mode": "manual",
+	"vsicons.dontShowNewVersionMessage": true,
+	"window.newWindowDimensions": "maximized",
+	"window.restoreWindows": "none",
+	"window.title": "${rootName}",
+	"workbench.colorCustomizations": {
+		"editorCursor.foreground": "#228B22",
+		"terminalCursor.foreground": "#228B22",
+		"editorBracketHighlight.foreground1": "#9E9E9E",
+		"editorBracketHighlight.foreground2": "#9E9E9E",
+		"editorBracketHighlight.foreground3": "#9E9E9E",
+		"editorBracketHighlight.foreground4": "#9E9E9E",
+		"editorBracketHighlight.foreground5": "#9E9E9E",
+		"editorBracketHighlight.foreground6": "#9E9E9E"
+	},
+	"workbench.colorTheme": "Relax Dark",
+	"workbench.iconTheme": "vscode-icons",
+	"workbench.sideBar.location": "left",
+	"workbench.startupEditor": "newUntitledFile",
+	"workbench.tree.renderIndentGuides": "always"
 }

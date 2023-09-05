@@ -18,3 +18,5 @@ These are notes regarding my settings-sync.json in this same directory.
    - `"#FF4E4F"` // Light Red
 
 1. I basically like most of my text to be dark grey and many things like numbers indention characters and headings to be a green. Feel free to use these if interested.
+
+1. Once all my settings are set, I like to use an [online json sorter](https://codeshack.io/json-sorter/) to sort the keys alphabetically.
